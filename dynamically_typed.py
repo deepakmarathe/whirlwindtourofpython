@@ -14,3 +14,19 @@ print("x is : ", x)
 x = [1,2,3]
 print("x is : ", x)
 
+# y now points to x. updating x will modify y too, because they are pointing to the same list. 
+y = x
+x.append(4)
+print y
+
+# x can now point to something different but it will not affect the contents of y.
+x = "something different"
+print y
+
+# number, string and other simple types are immutable
+x = 10
+y = x
+x += 5
+print("x is : ", x)
+print("y is : ", y)
+
