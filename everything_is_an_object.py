@@ -19,3 +19,9 @@ print x.real, "+", x.imag, "i"
 # is_integer() is a method.
 print x.is_integer()
 
+x = 4.0
+print x.is_integer()
+
+# everything is an object in python, even the attributes and methods themselves.  
+print type(x.is_integer)
+
