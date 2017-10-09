@@ -13,3 +13,10 @@ print "t[0] : ",  t[0]
 # t[0] = 100
 # t.append(4)
 
+x = 0.125
+t = x.as_integer_ratio()
+print t
+
+numerator, denominator = x.as_integer_ratio()
+print numerator * 1.0 / denominator
+
